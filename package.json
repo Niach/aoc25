@@ -1,0 +1,21 @@
+{
+  "name": "aoc25",
+  "version": "1.0.0",
+  "description": "Advent of Code 2025 Solutions",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "build:watch": "bun build src/index.ts --outdir dist --target bun --watch",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "day": "bun run src/day$DAY/day$DAY.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "^1.3.3",
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    // Bun supports the latest ES features
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "bundler",
+
+    // Bun-specific
+    "types": ["bun-types"],
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+
+    // Emit settings
+    "outDir": "dist",
+    "noEmit": false,
+
+    // Type checking
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    // Path resolution
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
