@@ -7,7 +7,7 @@ export async function day1() {
     const rotationsFileText = await Bun.file('src/day1/input.txt').text();
     const rotations = rotationsFileText.split('\n');
 
-    let dial = 50; // between 0 and 99 => modulo
+    let dial = 50; // between 0 and 99
     let numberOfZeroes = 0;
 
     for (let rotation of rotations) {
